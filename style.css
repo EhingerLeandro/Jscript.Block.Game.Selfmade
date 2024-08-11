@@ -1,0 +1,38 @@
+.parent{
+	display:flex;
+	justify-content:center;
+	border:solid 1px #6666;
+	border-radius:15px;
+	padding:2px
+}
+.app{
+	border:solid 3px #666;
+	border-radius:15px;
+	padding:5px;
+}
+.header{
+	color:#f66;
+	font-weight:bolder;
+	font-size:25px;
+	text-align:center;
+	margin-bottom:2px;
+}
+
+.body{
+	display:flex;
+}
+
+.nextBlock{
+	border:solid 3px #666;
+	width:40px;
+	height:40px;
+	margin-right:5px;
+}
+.blocksField{
+	border:solid 3px #666;
+	width:200px;
+	height:400px;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+/*	grid-template-rows:20 * 1fr;*/
+}
