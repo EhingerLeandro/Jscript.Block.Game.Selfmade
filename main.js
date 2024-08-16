@@ -80,9 +80,9 @@ function advancementBlock(blocky){
 	blockNumParse = parseInt(`${blocky.posRow*10+ blocky.posColumn}`);
 	historyArray.push(blockNumParse);
 
-	console.log("blockParseNum=>"+blockNumParse);
-	console.log("historyArray=>"+historyArray[historyArray.length - 2])
-	console.log("#####################")
+	// console.log("blockParseNum=>"+blockNumParse);
+	// console.log("historyArray=>"+historyArray[historyArray.length - 2])
+	// console.log("#####################")
 
 	blockVisualized = document.getElementById(`block-${blockNumParse}`);
 	blockVisualizedBefore = document.getElementById(`block-${historyArray[historyArray.length - 2]}`);

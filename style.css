@@ -1,13 +1,17 @@
-
+body{
+	background:linear-gradient(to bottom, #ffc, #8f8);
+	height:100vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
 
 .parent{
 	display:flex;
 	justify-content:center;
 /*	border:solid 1px #333;*/
-	border-radius:15px;
-	padding:2px;
-	background:linear-gradient(to bottom, #ffc, #8f8);
-	height:100%;
+/*	padding:2px;*/
+/* border-radius:15px; */
 }
 .app{
 	border:solid 3px #333;
@@ -38,6 +42,11 @@
 	height:40px;
 	margin:5px 10px 5px 5px;
 	background-color:#fff;
+}
+
+.arrow{
+	font-size:20px;
+	font-weigth:bolder;
 }
 .button{
 	width:75%;
