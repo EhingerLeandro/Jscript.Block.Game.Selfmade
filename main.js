@@ -141,4 +141,4 @@ clear.addEventListener("click", ()=>{
 	off = true;
 })
 
-// renderBlock();
+renderBlock();
