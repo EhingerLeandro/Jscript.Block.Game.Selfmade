@@ -12,7 +12,7 @@ let blockNumParse;
 let blockVisualized;
 let blockVisualizedBefore;
 let cleanEveryBlock;
-let off = true;
+let off = false;
 let intervalAdvance;
 let newBlock;
 
@@ -80,20 +80,14 @@ function advancementBlock(blocky){
 	blockNumParse = parseInt(`${blocky.posRow*10+ blocky.posColumn}`);
 	historyArray.push(blockNumParse);
 
-	// console.log("blockParseNum=>"+blockNumParse);
-	// console.log("historyArray=>"+historyArray[historyArray.length - 2])
-	// console.log("#####################")
-
 	blockVisualized = document.getElementById(`block-${blockNumParse}`);
 	blockVisualizedBefore = document.getElementById(`block-${historyArray[historyArray.length - 2]}`);
 
 	if(blocky.posRow>=2){ blockArrayFilled[historyArray[historyArray.length - 2]].filled = false;}
 	blockArrayFilled[blockNumParse].filled = true;
 
-
 	if(blocky.posRow>=2){ blockVisualizedBefore.classList.remove("blockActive");}
 	blockVisualized.classList.add("blockActive");
-	
  
 	if(blocky.posRow >= 18 || blockArrayFilled[blockNumParse + 10].filled===true ){
 		clearInterval(intervalAdvance);

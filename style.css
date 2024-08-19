@@ -45,15 +45,21 @@ body{
 }
 
 .arrow{
-	font-size:15px;
+	font-size:18px;
 	font-weigth:bolder;
 }
 .button{
-	width:75%;
-	margin:12px 2px 12px 2px;
+	text-align:center;
+	width:85%;
+	margin:12px 4px 12px 2px;
 	padding:5px;
+	border:none;
 	border-radius:15px;
 	background-color:#88f;
+	color:#111;
+  	white-space: normal;
+  	overflow: visible;
+	word-wrap: break-word;
 }
 .button:hover{
 	background-color:#66f;
@@ -67,7 +73,7 @@ body{
 	height:400px;
 	display:grid;
 	background-color:#fff;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(10, 1fr);
 }
 .blockActive{
 	background:#f9f;
